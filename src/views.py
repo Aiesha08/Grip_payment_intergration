@@ -8,7 +8,7 @@ from django.template.loader import render_to_string
 
 
 def index(request):
-    return render(request,"pay.html")
+    return render(request,"index.html")
 def home(request):
     if request.method == "POST":
         name=request.POST.get("name")
