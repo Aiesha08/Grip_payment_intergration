@@ -1,0 +1,1 @@
+web:gunicorn grip_razorpay.wsgi --log-file
