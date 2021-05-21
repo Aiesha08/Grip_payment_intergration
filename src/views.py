@@ -21,9 +21,9 @@ def home(request):
         print(payment)
         Donate=donate(name=name,amount=amount,email=email,payment_id=payment['id'])
         Donate.save()
-        return render(request,"index.html",{'payment':payment})
+        return render(request,"pay.html",{'payment':payment})
 
-    return render(request,"index.html")
+    return render(request,"pay.html")
 
 @csrf_exempt
 def success(request):
